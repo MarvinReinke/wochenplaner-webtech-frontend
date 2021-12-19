@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue Logo" src="src/assets/logo.png">
+    <img alt="Vue Logo" src="src/assets/WeePLan_Logo.png">
     <HelloWorld msg="Willkommen bei WeePlan!"/>
   </div>
 </template>
