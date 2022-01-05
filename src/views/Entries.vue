@@ -1,5 +1,5 @@
 <template>
-  <h1>Welcome to Entries</h1>
+  <h1>Hier findest du deine Einträge</h1>
   <div class="row row-cols-1 row-cols-md-2 g-4">
     <div class="col">
       <div class="col" v-for="entry in entries" :key="entry.id">
@@ -10,22 +10,6 @@
           </div>
         </div>
       </div>
-<!--      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>-->
     </div>
   </div>
 </template>
@@ -39,14 +23,17 @@ export default {
     }
   },
   mounted () {
+    console.log('Hello World')
     const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/entries'
     const requestOptions = {
       method: 'GET',
       redirect: 'follow'
     }
+    console.log(endpoint)
     fetch(endpoint, requestOptions)
       .then(response => response.json())
       .then(result => result.forEach(entry => {
+        console.log(entry)
         this.entries.push(entry)
       }))
       .catch(error => console.log('error', error))

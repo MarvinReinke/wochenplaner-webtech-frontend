@@ -7,8 +7,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <router-link class="nav-link" to="/"> Home</router-link>
-        <router-link class="nav-link" to="/about"> About</router-link>
         <router-link class="nav-link" to="/entries"> Entries</router-link>
+        <router-link class="nav-link" to="/about"> About</router-link>
       </div>
     </div>
   </nav>

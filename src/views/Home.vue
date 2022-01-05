@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue Logo" src="src/assets/WeePLan_Logo.png">
     <HelloWorld msg="Willkommen bei WeePlan!"/>
+     <img src="/src/assets/WeePlan_Logo.png" alt="WeePlanLogo">
   </div>
 </template>
 
