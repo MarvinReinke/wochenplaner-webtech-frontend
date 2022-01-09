@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <HelloWorld msg="Willkommen bei WeePlan!"/>
-     <img src="/src/assets/WeePlan_Logo.png" alt="WeePlanLogo">
+    <h1> klicke auf den Button um einen neuen Wochenplan zu erstellen</h1>
+    <img src="src/assets/WeePlan_Logo.png" alt="WeePlanLogo">
   </div>
 </template>
 
@@ -16,3 +17,6 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+</style>
